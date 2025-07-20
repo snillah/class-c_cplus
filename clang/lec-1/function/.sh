@@ -81,3 +81,16 @@ Readability: Makes the code more organized and easier to understand.
 Debugging: Easier to identify and fix errors in smaller, independent functions.
 
 Collaboration: Teams can work on different functions independently.
+
+
+Call by Value
+What It Means:
+A copy of the variable is passed to the function.
+
+Changes made inside the function do not affect the original variable.
+
+2. Call by Reference
+What It Means:
+The address of the variable is passed.
+
+Changes made inside the function do affect the original variable.
