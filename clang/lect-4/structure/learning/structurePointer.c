@@ -7,6 +7,12 @@ struct Student {
     char name[50];
 };
 
+
+void printDetails(struct Student std){
+    printf("Student ID: %d\n", std.id);
+    printf("Student Name: %s\n",std.name);
+}
+
 int main() {
     // Declare a structure variable
     struct Student s1;
@@ -21,9 +27,10 @@ int main() {
     ptr->id = 101;
     strcpy(ptr->name, "Alice");
 
+     printDetails(s1);
     // Access and print values
-    printf("Student ID: %d\n", ptr->id);
-    printf("Student Name: %s\n", ptr->name);
+    // printf("Student ID: %d\n", ptr->id);
+    // printf("Student Name: %s\n", ptr->name);
 
     return 0;
 }
