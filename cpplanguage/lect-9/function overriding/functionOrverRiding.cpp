@@ -22,6 +22,9 @@
      a = &d;
      a->sound();  //  Output: Dog barks (not Animal)
  }
+<<<<<<< HEAD
 
  kmlshdlfsdm
  
+=======
+>>>>>>> refs/remotes/origin/main
