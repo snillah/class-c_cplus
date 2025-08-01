@@ -8,17 +8,23 @@ protected:
 
 public:
     Animal(string n) : name(n) {}
-
     // Virtual function for polymorphism
-    virtual void speak() {
-        cout << name << " makes a sound." << endl;
+
+    // virtual void speak() {
+    //     cout << name << " makes a sound." << endl;
+    // }
+
+    virtual void speak() = 0;  // Pure virtual function
+    // it uses : like you have to redefine the same function in the child class if not it will throw error
+    ~Animal(){
+        // cout<<"destructor called"<<endl;
     }
 };
 
 // Derived class 1
 class Dog : public Animal {
 public:
-    Dog(string n) : Animal(n) {}
+    Dog(string n):Animal(n) {}
 
     void speak() override {
         cout << name << " barks!" << endl;
@@ -36,6 +42,7 @@ public:
 };
 
 int main() {
+    
     Animal* a1 = new Dog("Tommy");
     Animal* a2 = new Cat("Kitty");
 

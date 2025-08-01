@@ -16,9 +16,11 @@
  };
 
  int main() {
+     //  derived Class created
+      Dog d;
+    // Base class
+    //  Animal *a =NULL;
      Animal* a;
-     Dog d;
-
      a = &d;
      a->sound();  //  Output: Dog barks (not Animal)
  }
