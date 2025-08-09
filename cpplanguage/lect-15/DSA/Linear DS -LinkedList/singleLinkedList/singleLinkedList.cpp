@@ -8,8 +8,9 @@ struct Node {
 
 // Function to print linked list
 void printList(Node* head) {
+    // create trmprary node and passing the head
     Node* temp = head;
-    while (temp != nullptr) {
+    while (temp != nullptr) { //nullptr until the end of the list
         cout << temp->data << " -> ";
         temp = temp->next;
     }
