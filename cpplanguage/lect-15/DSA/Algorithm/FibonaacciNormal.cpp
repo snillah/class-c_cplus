@@ -47,8 +47,10 @@
 #include <iostream>
 using namespace std;
 
+typedef unsigned long ulong;
+
 void fibonacci(int n) {
-    int a = 0, b = 1, c;
+    ulong a = 0, b = 1, c;
     for (int i = 0; i < n; i++) {
         cout << a << " ";
         c = a + b;
@@ -58,7 +60,7 @@ void fibonacci(int n) {
 }
 
 int main() {
-    int n = 10;
+    int n = 100;
     fibonacci(n);
     return 0;
 }
